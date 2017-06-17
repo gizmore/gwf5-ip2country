@@ -15,7 +15,7 @@ final class GWF_IPCountry extends GDO
 	### GDO ###
 	###########
 	public static $ENGINE = self::MYISAM;
-	
+	public function gdoCached() { return false; }
 	public function gdoColumns()
 	{
 		return array(
