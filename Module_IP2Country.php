@@ -15,6 +15,7 @@ final class Module_IP2Country extends GWF_Module
 	### Module ###
 	##############
 	public function getClasses() { return ['GWF_IPCountry']; }
+	public function onLoadLanguage() { $this->loadLanguage('lang/ip2country'); }
 	public function href_administrate_module() { return href('IP2Country', 'InstallIP2C'); }
 	
 	##############
