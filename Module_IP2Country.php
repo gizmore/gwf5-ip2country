@@ -33,11 +33,11 @@ final class Module_IP2Country extends GWF_Module
 	#############
 	### Hooks ###
 	#############
-	public function hookUserActivated(array $args)
+	public function hookUserActivated(GWF_User $user)
 	{
 		if ($this->cfgAutodetectSignup())
 		{
-			$this->autodetectForUser($args[0]);
+			$this->autodetectForUser($user);
 		}
 	}
 	private static function autodetectForUser(GWF_User $user)
